@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Sigmar&display=swap" rel="stylesheet">
+    
+  </head>
+
+  <body>
+    <div class="caja">
+      <div class="encriptar">
+        <textarea
+          name="texto"
+          class="texto"
+          id="texto"
+          cols="40"
+          rows="15"
+          placeholder="Ingresa el texto aquí"></textarea>
+        
+        <div class="terminos">
+          <p></p>
+        </div>
+        <div class="botones">
+          <button class="boton-encriptar" type="button" onclick="encriptar()">
+            Encriptar
+          </button>
+          <button class="boton-desencriptar" type="button" onclick="desencriptar()"> Desencriptar
+          </button>
+        </div>
+      </div>
+      <div class="encriptado">
+        <iframe class="animacion" src="https://giphy.com/embed/PkD8o1I8w55aE" width="480" height="378" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/ascii-en-imgenes-PkD8o1I8w55aE"></a></p> 
+        <div class="mensaje-encriptado" id="mensaje-encriptado">
+          <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+          <p id="parrafo">
+            Ingresa el texto que deseas encriptar o desencriptar
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
